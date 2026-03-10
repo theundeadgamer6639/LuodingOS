@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuodingOS</title>
+    <script src="vbook.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to LuodingOS</h1>
+    </header>
+    <main>
+        <section id="vbook">
+            <h2>VBook Functionality</h2>
+            <p>Enjoy our interactive reading experience!</p>
+        </section>
+
+        <section id="luodingtube">
+            <h2>LuodingTube Video Playback</h2>
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="images">
+            <h2>Browser Images</h2>
+            <img src="image1.jpg" alt="Image 1">
+            <img src="image2.jpg" alt="Image 2">
+        </section>
+
+        <section id="vroute">
+            <h2>VRoute Social Integration</h2>
+            <p>Connect with your friends and share your journey!</p>
+        </section>
+
+        <section id="flashcards">
+            <h2>Shared Flashcard Sets</h2>
+            <p>Collaborate on flashcard sets with others.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 LuodingOS. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Fix duplicate notifications
+        const notifications = new Set();
+        function showNotification(message) {
+            if (!notifications.has(message)) {
+                notifications.add(message);
+                console.log(message);
+            }
+        }
+    </script>
+</body>
+</html>
